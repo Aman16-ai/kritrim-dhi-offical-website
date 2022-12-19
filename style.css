@@ -29,11 +29,13 @@ body {
     display: flex;
     color: #46bfc3;
 }
-.links ul li {
+.links ul li a {
     margin-left: 50px;
     font-family: 'Rubik', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
+    text-decoration: none;
+    color: #46bfc3;
 }
 .links ul :hover {
     text-decoration: underline;

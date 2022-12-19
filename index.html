@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body>
     <div class="header">
@@ -16,10 +17,10 @@
             <img id="logo" width="80px" height="80px" src="logo.png" alt="">
             <div class="links">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Projects</a></li>
+                    <li><a href="#about">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,7 +35,7 @@
             AND SPORTS and KRITRIM SOCIAL MEDIA. Following are the main
             objectives of the Society.</P>
     </div>
-    <h1 style="text-align: center; margin-top:80px; margin-bottom:0px; font-size:35px;">Our Departments</h1>
+    <section id="about"><h1 style="text-align: center; margin-top:80px; margin-bottom:0px; font-size:35px;">Our Departments</h1></section>
     <div style="margin-top: 5px;" class="container">
         <h1 style="text-align: center; color:#46bfc3; font-size:35 px">Technical <span style="color: #07132b;">Department</span></h1>
         <P>The Department of Artificial Intelligence and Machine Learning introduces the
@@ -118,29 +119,34 @@
     <h1 style="text-align: center; margin-top:60px; margin-bottom:0px; font-size:35px;">Our Team</h1>
     <div id="team-container" class="owl-carousel owl-theme">
         <div class="member-card">
-            <img height="205px" src="gitpic.jpg" alt="">
+            <img height="205px" src="./static/team/gitpic.jpg" alt="">
             <h2 style="color: #07132b;">Aman Saxena</h2>
             <h3 style="color:#46bfc3;">Tech Lead</h3>
         </div>
         <div class="member-card">
-            <img height="205px" src="deepti.jpeg" alt="">
+            <img height="205px" src="./static/team/deepti.jpeg" alt="">
             <h2 style="color: #07132b;">Deepti Prasad</h2>
             <h3 style="color:#46bfc3;">R&D</h3>
         </div>
         <div class="member-card">
-            <img height="205px" src="rahul.jpeg" alt="">
+            <img height="205px" src="./static/team/rahul.jpeg" alt="">
             <h2 style="color: #07132b;">Rahul Sharma</h2>
             <h3 style="color:#46bfc3;">Event Lead</h3>
         </div>
         <div class="member-card">
-            <img height="205px" src="devansh.jpeg" alt="">
+            <img height="205px" src="./static/team/devansh.jpeg" alt="">
             <h2 style="color: #07132b;">Devansh Singh</h2>
             <h3 style="color:#46bfc3;">Graphics</h3>
         </div>
         <div class="member-card">
-            <img height="205px" src="sahil.jpeg" alt="">
+            <img height="205px" src="./static/team/sahil.jpeg" alt="">
             <h2 style="color: #07132b;">Sahil</h2>
             <h3 style="color:#46bfc3;">Sports Lead</h3>
+        </div>
+        <div class="member-card">
+            <img height="205px" src="./static/team/yukti.jpeg" alt="">
+            <h2 style="color: #07132b;">yukti Batra</h2>
+            <h3 style="color:#46bfc3;">Graphics</h3>
         </div>
     </div>
     <footer>
@@ -152,7 +158,8 @@
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    nav:false,
+    dots:false,
     responsive:{
         0:{
             items:1
