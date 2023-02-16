@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
 }
+
 .header {
     width: 100vw;
     height: 14vh;
@@ -16,6 +17,7 @@ body {
     align-items: center;
 
 }
+
 .links {
     width: 40vw;
     height: 9vh;
@@ -29,6 +31,7 @@ body {
     display: flex;
     color: #46bfc3;
 }
+
 .links ul li a {
     margin-left: 50px;
     font-family: 'Rubik', sans-serif;
@@ -37,45 +40,71 @@ body {
     text-decoration: none;
     color: #46bfc3;
 }
+
 .links ul :hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
 nav {
     display: flex;
 }
+
 #logo {
     margin-left: 10px;
 }
 
 
 #main-img {
-   width: 100vw;
-   height: 90vh;
+    width: 100vw;
+    height: 90vh;
 }
+
 .container {
     width: 80vw;
-    /* border: 2px solid red; */
+
     align-self: center;
 }
-.container > h1 {
+
+.department-container {
+    width: 80vw;
+    height: 65vh;
+    /* border: 2px solid red; */
+    align-self: center;
+    background: rgb(70, 191, 195);
+    background: linear-gradient(90deg, rgba(70, 191, 195, 1) 22%, rgba(7, 19, 43, 1) 81%);
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.container>h1 {
     font-size: 50px;
     font-weight: bolder;
     margin-bottom: 0px;
 }
-.container > p {
+.department-container>h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.container>p {
     font-size: 20px;
     font-weight: 300;
     word-spacing: 13px;
     margin-top: 10px;
 }
+
 .container ul li {
     font-size: larger;
 }
+
 #team-container {
     margin-left: 35px;
     margin-top: 20px;
 }
+
 .member-card {
     display: flex;
     width: 15vw;
@@ -83,17 +112,20 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 .member-card img {
     width: 10vw;
     border: 3px solid #46bfc3;
     border-radius: 30rem;
 }
+
 .member-card h2 {
     margin-top: 5px;
     margin-bottom: 0px;
 }
+
 .member-card h3 {
     margin-top: 0px;
 }
@@ -102,4 +134,36 @@ footer {
     width: 100vw;
     height: 10vh;
     background-color: #07132b;
+}
+
+.department-info {
+    width: 60vw;
+    height: 35vh;
+    margin: auto;
+    display: flex;
+    
+}
+.left {
+    width: 50%;
+    height: 100%;
+    border-right: 3px solid #ade8f4;
+}
+.right {
+    width: 50%;
+    height: 100%;
+    
+}
+.department-info .left p {
+    color: white;
+    font-size: larger;
+    text-align: right;
+    margin-right: 10px;
+}
+.department-info .right ul li {
+    color: white;
+    font-size: larger;
+}
+
+.department-info .right ul {
+    color: #ade8f4;
 }
